@@ -1,0 +1,32 @@
+{% extends 'teams/base.html' %}
+{% load static %}
+
+{% block title %}Update team{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="#">
+{% endblock %}
+
+{% block content %}
+    <div class="w-96 h-2/3 p-5">
+        <form method="post" action="{% url 'update-team' team.pk %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for field in update_team_form %}
+                <p class="w-full mb-2">
+                    {{ field }}
+                </p>
+                {% if field.errors %}
+                    {% for error in field.errors %}
+                        <p>{{ error }}</p>
+                        <p>{{ field.name }}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+
+            <button type="submit" class="bg-teal-600 hover:bg-teal-700 p-1 rounded-lg" id="CreateTeamBtn">
+                Update team
+            </button>
+        </form>
+    </div>
+{% endblock %}
+
+

@@ -1,0 +1,67 @@
+body > div:nth-child(2){
+    background-image: url('../images/player.png')!important;
+}
+
+.card-container {
+    display: flex;flex-direction: column;
+    color: white;
+    width: 50%;
+    height: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    padding-right: 30px;
+    background-color: darkslategrey;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+.card-content {
+    display: flex;
+    width: 100%;
+}
+
+.card-details {
+    width: 70%;
+    flex-grow: 1;
+    padding-left: 30px;
+    height: 350px;
+}
+
+.card-content > div {
+    width: 30%;
+}
+
+.card-content > div form {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    background-color: inherit;
+    opacity: 0.9;
+}
+
+.card-details p {
+    background-color: #ffffcc;
+    color: #00363a;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: 2px solid #222222;
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#buttonUploadImage {
+    width: 100%;
+}
