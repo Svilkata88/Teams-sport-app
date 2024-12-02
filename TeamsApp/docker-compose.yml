@@ -1,0 +1,16 @@
+services:
+  db:
+    restart: always
+    image: postgres
+    container_name: SvilenPostgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123321123
+      POSTGRES_DB: teams_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

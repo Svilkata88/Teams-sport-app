@@ -1,0 +1,30 @@
+
+.form-help-text {
+    font-size: 12px;
+    font-style: italic;
+    color: #f5dd5d;
+}
+
+.form-input {
+}
+
+
+body > div:nth-child(2){
+    display: flex;
+    background-image: url('../images/player.png') !important;
+    align-items: center;
+}
+
+#form-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #50666b;
+    width: 600px;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 29px 8px rgba(0, 0, 0, 0.40);
+    opacity: 0.9;
+}
