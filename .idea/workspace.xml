@@ -53,7 +53,7 @@
     &quot;Python.settings.executor&quot;: &quot;Run&quot;,
     &quot;Python.views.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;&lt;unknown&gt;&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/TeamsProject&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -127,7 +127,7 @@
       <workItem from="1733647917371" duration="445000" />
       <workItem from="1733648372340" duration="27345000" />
       <workItem from="1733693535062" duration="598000" />
-      <workItem from="1733694681811" duration="18432000" />
+      <workItem from="1733694681811" duration="22804000" />
     </task>
     <servers />
   </component>
