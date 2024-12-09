@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/TeamsApp" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Teams/user/admin.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Teams/user/models.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2mZtc9N55mDdQi9WOTULhRowq9K" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Docker.TeamsApp: Compose Deployment.executor": "Run",
+    "Python.__init__.executor": "Debug",
+    "Python.admin.executor": "Run",
+    "Python.forms.executor": "Debug",
+    "Python.manage.executor": "Debug",
+    "Python.settings.executor": "Run",
+    "Python.views.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/TeamsProject",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TeamsProject\TeamsApp\staticfiles\images" />
+      <recent name="D:\TeamsProject\Teams\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\TeamsProject\TeamsApp\templates\common" />
+      <recent name="D:\TeamsProject" />
+      <recent name="D:\TeamsProject\TeamsApp\templates\players" />
+      <recent name="D:\TeamsProject\Teams\static\images" />
+      <recent name="D:\TeamsProject\Teams" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17890.14" />
+        <option value="bundled-python-sdk-5b207ade9991-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="" />
+      <created>1727296009966</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727296009966</updated>
+      <workItem from="1727296014776" duration="2077000" />
+      <workItem from="1727624517549" duration="6390000" />
+      <workItem from="1727630983910" duration="12481000" />
+      <workItem from="1728810494013" duration="13851000" />
+      <workItem from="1728825388497" duration="52245000" />
+      <workItem from="1729624788701" duration="235000" />
+      <workItem from="1730051783359" duration="19256000" />
+      <workItem from="1730560314967" duration="77959000" />
+      <workItem from="1731739501675" duration="42908000" />
+      <workItem from="1731862918949" duration="42951000" />
+      <workItem from="1732444350010" duration="6859000" />
+      <workItem from="1732453392771" duration="27863000" />
+      <workItem from="1732957401875" duration="16744000" />
+      <workItem from="1733038116611" duration="1939000" />
+      <workItem from="1733040107651" duration="65000" />
+      <workItem from="1733040177652" duration="2358000" />
+      <workItem from="1733042589289" duration="144000" />
+      <workItem from="1733042741864" duration="23713000" />
+      <workItem from="1733084075211" duration="3180000" />
+      <workItem from="1733091622045" duration="22894000" />
+      <workItem from="1733261661827" duration="5248000" />
+      <workItem from="1733267070882" duration="3423000" />
+      <workItem from="1733500482035" duration="9015000" />
+      <workItem from="1733510077601" duration="6338000" />
+      <workItem from="1733557613901" duration="33815000" />
+      <workItem from="1733647917371" duration="445000" />
+      <workItem from="1733648372340" duration="27345000" />
+      <workItem from="1733693535062" duration="598000" />
+      <workItem from="1733694681811" duration="16863000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Teams/players/forms.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TeamsProject$settings.coverage" NAME="settings Coverage Results" MODIFIED="1733513656967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TeamsApp/TeamsApp" />
+    <SUITE FILE_PATH="coverage/TeamsProject$forms.coverage" NAME="forms Coverage Results" MODIFIED="1729364273320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Teams/user" />
+    <SUITE FILE_PATH="coverage/TeamsProject$admin.coverage" NAME="admin Coverage Results" MODIFIED="1733696772389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TeamsApp/players" />
+    <SUITE FILE_PATH="coverage/TeamsProject$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1732436997186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib/site-packages/django/conf" />
+    <SUITE FILE_PATH="coverage/TeamsProject$views.coverage" NAME="views Coverage Results" MODIFIED="1732437116719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Teams/user" />
+    <SUITE FILE_PATH="coverage/TeamsProject$manage.coverage" NAME="manage Coverage Results" MODIFIED="1732436943737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Teams" />
+  </component>
+</project>

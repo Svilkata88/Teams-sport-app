@@ -1,0 +1,51 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block title %}Players dasgboard{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/players-dashboard.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="grid grid-cols-5 gap-1 items-center">
+        <form class="search-box" id="searchForm">
+            {{ search_form }}
+            <button type="submit" id="searchBtn" class="h-10 w-10 border-2 border-white rounded-2xl p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="white" height="22px" width="22px" version="1.1" id="Capa_1" viewBox="0 0 488.4 488.4" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6    s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2    S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7    S381.9,104.65,381.9,203.25z"/>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </form>
+        <h1 class="text-white text-center text-2xl m-5 col-span-3">PLAYERS</h1>
+    </div>
+
+    <div class="players-container">
+        {% for player in players %}
+            <a href="{% url 'details-page' player.pk %}">
+            <div class="player-card-container">
+                <div class="player-detail-img-container">
+                    <img src="{{ player.image.url }}" alt="">
+                </div>
+                <p class="text-white text-lg">{{ player.username }}</p>
+                <p class="text-white">/</p>
+{#                <p class="text-white">{{ player.get_full_name }}</p>#}
+{#                <p class="text-white">{{ player.tel }}</p>#}
+                {% if player.team %}
+                    <p class="text-white text-lg">{{ player.team }}</p>
+                {% else %}
+                    <p class="text-white text-lg">No team!</p>
+                {% endif %}
+            </div>
+            </a>
+        {% endfor %}
+    </div>
+
+     <script src="{% static 'js/playersDashboard.js' %}"></script>
+{% endblock %}
+
+

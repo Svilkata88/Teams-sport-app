@@ -1,0 +1,57 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block title %}Update team{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/teams-update-page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="update-team-container">
+        <form method="post" action="{% url 'update-team' team.pk %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h1>Update team</h1>
+{#            {% if messages %}#}
+{#                <div class="alert alert-danger">#}
+{#                    {% for message in messages %}#}
+{#                        <p>{{ message }}</p>#}
+{#                    {% endfor %}#}
+{#                </div>#}
+{#            {% endif %}#}
+
+            {% for field in update_team_form %}
+                <div class="update-team-field">
+                    {% if field.name == "logo" %}
+                            <div class="imgBox">
+                            {% if team.logo %}
+                                <img src="{{ team.logo.url }}" alt="">
+                            {% else %}
+                                <img src="https://res.cloudinary.com/dnnab4vv0/image/upload/v1733561101/TeamsApp/team_profile_images/default_team.jpg" alt="Default Team Logo">
+                            {% endif %}
+                            <label for="{{ field.id_for_label }}" class="uploadFileLogo">
+                                Select logo
+                            </label>
+                        </div>
+                    {% endif %}
+                    <p>
+                        {{ field }}
+                    </p>
+                    {% if field.errors %}
+                        {% for error in field.errors %}
+                            <p>{{ error }}</p>
+                            <p>{{ field.name }}</p>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+
+            <button type="submit" id="CreateTeamBtn" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                Update team
+            </button>
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'js/updateTeam.js' %}"></script>
+{% endblock %}

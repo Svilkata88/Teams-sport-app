@@ -1,0 +1,23 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block title %}Register Form{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/register_form.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <form method="POST" class="text-stone-50 " id="form-wrapper">
+        <h1 class="my-2 text-xl">Register player</h1>
+        {% csrf_token  %}
+        {% for field in form %}
+            <div class="my-2 w-2/3">
+                <p class="form-input">{{ field }}</p>
+                <p class="form-help-text">{{ field.help_text }}</p>
+            </div>
+        {% endfor %}
+        <button class="bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded-xl my-5 w-2/3">Submit</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+.create-team-container {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 35%;
+    min-height: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: darkslategrey;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+.create-team-container h1 {
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.create-team-field p {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+input[type="file"] {
+    width: 0;
+    height: 0;
+    z-index: -1;
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.uploadFileLogo {
+    height: 26px;
+    width: 150px;
+    line-height: 26px;
+    color: black;
+    display: inline-block;
+    text-align: start;
+    padding-left: 8px;
+    background-color: lightgrey;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.create-team-container img {
+    height: 150px;
+    width: 150px;
+    justify-self: center;
+    border-radius: 100%;
+    margin-top: 25px;
+}

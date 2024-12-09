@@ -1,0 +1,50 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block title %}Player details{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/update-player.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="card-container">
+        <h1 class="text-2xl text-center">Player's details</h1>
+        <br>
+
+        <form method="post" action="{% url 'update-player' player.pk %}" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            {# IMAGE PLACEHOLDER #}
+            <div class="image-container">
+                <div class="card-image">
+                    {% if player.image %}
+                        <img src="{{ player.image.url }}" alt="Profile Image">
+                    {% else %}
+                        <img src="{{ MEDIA_URL }}profile_images/default_profile.png" alt="Default Profile Image">
+                    {% endif %}
+                </div>
+
+                <button type="submit" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                    Confirm update
+                </button>
+            </div>
+
+            {# PROFILE DETAILS  ----------------------------#}
+            <div class="card-content">
+                <p class="pb-2 text-black">{{ form.username }}</p>
+                <p class="pb-2 text-black">{{ form.first_name }}</p>
+                <p class="pb-2 text-black">{{ form.last_name }}</p>
+                <p class="pb-2 text-black">{{ form.email }}</p>
+                <p class="pb-2 text-black">{{ form.tel }}</p>
+                <p class="pb-2 text-black" id="playerImg">{{ form.image }}</p>
+                <p class="pb-2 text-black">{{ form.team }}</p>
+            </div>
+
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'js/updatePlayer.js' %}"></script>
+{% endblock %}

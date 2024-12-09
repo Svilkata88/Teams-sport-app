@@ -1,0 +1,83 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block title %}Teams dasgboard{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/teams-details-page.css' %}">
+{% endblock %}
+
+{% block content %}
+    <!-- delete confirmation popup -->
+    <div id="customModal" class="custom-modal">
+        <div class="custom-modal-content">
+            <span id="closeBtn" class="close-btn">&times;</span>
+            <h2>Are you sure you want to delete this team?</h2>
+            <div class="modal-actions">
+                <button id="confirmBtn" class="modal-btn confirm-btn">Yes, Delete</button>
+                <button id="cancelBtn" class="modal-btn cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex p-5">
+        <div class="m-5 p-3 w-1/3 border-2 border-blue-300 rounded-lg bg-slate-700">
+            <h1 class="text-white text-center text-2xl m-2">{{ team.name }}</h1>
+            <h3 class="text-white text-center text-lg m-2">Rank: <strong>{{ team.rank }}</strong></h3>
+
+            <div class="flex text-white justify-center text-lg m-2">
+                <p class="px-2">Wins: <span class="text-green-600">{{ team.wins }}</span></p> |
+                <p class="px-2">Draws: <span class="text-yellow-300">{{ team.draws }}</span></p> |
+                <p class="px-2">Loses: <span class="text-red-500">{{ team.loses }}</span></p>
+            </div>
+            <div class="w-48 h-48 rounded-full overflow-hidden m-2 justify-self-center">
+                {% if team.logo %}
+                    <img src="{{ team.logo.url }}" alt="Team Logo" class="w-full h-full object-cover">
+                {% else %}
+                    <img src="{{ MEDIA_URL }}profile_images/default_team.jpg" alt="Default Team Logo" class="w-full h-full object-cover">
+                {% endif %}
+            </div>
+            <p class="text-white pb-2">Team history: {{ team.history }}</p>
+            {% for admin in team.administrators.all %}
+                <p class="text-white pb-2">Administrators: {{ admin.username }}</p>
+            {% endfor %}
+                <p class="text-white pb-2">Team founded: {{ team.date_founded }}</p>
+
+            {#Buttons for delete and update / only administrators can see them!#}
+            {% if request.user in administrators %}
+                <div class="flex gap-1">
+                    <form method="post" action="{% url 'delete-team' team.pk %}" id="deleteForm">
+                        {% csrf_token %}
+                        <button type="submit" id="deleteTeamBtn" class="cursor-pointer rounded-md bg-neutral-950 px-3 py-1 text-sm text-white shadow-lg shadow-neutral-500/20 transition active:scale-[.95] hover:border border-white-500">
+                            Delete Team
+                        </button>
+                    </form>
+
+                    <a href="{% url 'update-team' team.pk %}">
+                        <button class="cursor-pointer rounded-md bg-neutral-950 px-3 py-1 text-sm text-white shadow-lg shadow-neutral-500/20 transition active:scale-[.95] hover:border border-white-500">
+                            Update
+                        </button>
+                    </a>
+
+                    <button class="cursor-pointer rounded-md bg-neutral-950 px-3 py-1 text-sm text-white shadow-lg shadow-neutral-500/20 transition active:scale-[.95] hover:border border-white-500">
+                        ,,,
+                    </button>
+                </div>
+            {% endif %}
+
+
+        </div>
+        <div class="m-5 w-2/3 grid grid-cols-5 gap-1">
+            {% for player in team.players.all %}
+                <div class="text-black bg-gray-700 rounded-lg w-50 h-60 p-3 border-2 border-blue-400 mx-2">
+                    <div class="rounded-full overflow-hidden h-32 w-32 mx-auto border-4 border-blue-300 p-2">
+                        <img src="{{ player.image.url }}" alt="" class="object-cover h-full w-full rounded-full">
+                    </div>
+                    <p class="text-center text-white">{{ player }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <script src="{% static 'js/teamDetailsPage.js' %}"></script>
+{% endblock %}
+
