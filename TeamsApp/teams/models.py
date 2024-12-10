@@ -8,7 +8,7 @@ class Team(models.Model):
     date_added = models.DateField(auto_now_add=True)
     date_founded = models.DateField(blank=True, null=True)
     history = models.TextField(null=True, blank=True)
-    administrators = models.ManyToManyField(to='players.Player', related_name='administered_team')
+    administrators = models.ManyToManyField(to='players.Player', related_name='administered_team', blank=True)
     wins = models.SmallIntegerField(default=0)
     draws = models.SmallIntegerField(default=0)
     loses = models.SmallIntegerField(default=0)

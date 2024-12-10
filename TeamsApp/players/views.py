@@ -19,7 +19,7 @@ def player_login(request):
         if user is not None:
             login(request, user)
             messages.success(request, f"You've been logged in!!! Welcome {username}")
-            return redirect(next_url if next_url else 'index')
+            return redirect(next_url if next_url else 'matches-dashboard')
         else:
             form.add_error(None, "Invalid username or password.")
 
@@ -32,7 +32,7 @@ def player_login(request):
 
 def player_logout(request):
     logout(request)
-    return redirect('index')
+    return redirect('matches-dashboard')
 
 
 def player_register(request):
@@ -48,7 +48,7 @@ def player_register(request):
             if user is not None:
                 login(request, user)
                 messages.success(request, f'Welcome {user.username}. You successfully registered!!!')
-                return redirect('index')
+                return redirect('matches-dashboard')
 
     context = {
         'form': form

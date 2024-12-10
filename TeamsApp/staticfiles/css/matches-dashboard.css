@@ -1,0 +1,52 @@
+.matches-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    width: 35%;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: darkslategrey;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+.game-row {
+    display: flex;
+    justify-content: space-between;
+    background-color: #bbf7d0;
+    width: 75%;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.vs {
+    color: #FF0000;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.result-home {
+    color: #003366;
+    margin: 0 5px;
+}
+
+.result-away {
+    color: #003366;
+    margin: 0 5px;
+}
+
+.home-team {
+    width: 30%;
+    flex-grow: 1;
+}
+
+.away-team {
+    width: 30%;
+    text-align: right;
+    flex-grow: 1;
+}
+
