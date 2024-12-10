@@ -2,10 +2,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from TeamsApp import settings
+from matches import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('common.urls')),
+    path('', views.MatchesDashboard.as_view(), name='matches-dashboard'),
     path('players/', include('players.urls')),
     path('teams/', include('teams.urls')),
     path('matches/', include('matches.urls')),
