@@ -6,7 +6,7 @@ class MatchCreateForm(forms.ModelForm):
     class Meta:
         model = Matches
         fields = ['home_team', 'away_team', 'referee', 'status', 'playground', 'date', 'time']
-        widgets = {  # Fixed typo here
+        widgets = {
             'home_team': forms.Select(),
             'away_team': forms.Select(),
             'referee': forms.Select(),
@@ -21,3 +21,5 @@ class MatchCreateForm(forms.ModelForm):
                 'type': 'time',
             }),
         }
+
+

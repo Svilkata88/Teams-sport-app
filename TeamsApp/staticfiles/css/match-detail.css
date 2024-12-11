@@ -29,15 +29,14 @@
     gap: 10px;
     font-size: 46px;
     background-color: #bbf7d0;
-    margin-bottom: 10px;
 }
 
 .home_team {
-    font-size: 50px;
+    text-align: center;
 }
 
 .away_team {
-    font-size: 50px;
+    text-align: center;
 }
 
 .vs {

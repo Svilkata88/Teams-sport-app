@@ -2,13 +2,9 @@
 
 
 {% block content %}
-    <h1 class="text-white">DA SE PROMENI - TUK DA IZLIZAT MACHOVETE S OTBORI V TQH NE SAMITE OTBORI</h1>
-    <div class="grid grid-cols-5 gap-1">
-    {% for team in teams %}
-        <div class="border-2 rounded-xl m-5 p-3 bg-slate-100">
-            <h1 class="pb-2 text-center"><strong>{{ team }}</strong></h1>
-            <p>{{ team.history }}</p>
-        </div>
-    {% endfor %}
+    <div class="min-h-screen flex items-start justify-center pt-2">
+        <h1 class="text-lime-400 font-bold text-3xl w-1/2 text-center">
+            Време е за игра – свържи се, организирай се и побеждавай! Тук срещаш отбори, създаваш срещи и пишеш истории.
+        </h1>
     </div>
 {% endblock %}

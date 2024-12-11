@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="" />
+    <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2fcad074-0952-45fa-8a8e-0ee9bc2a7eaa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2fcad074-0952-45fa-8a8e-0ee9bc2a7eaa/storage_v2/_src_/database/teams_db.p4OZnA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2fcad074-0952-45fa-8a8e-0ee9bc2a7eaa/storage_v2/_src_/database/teams_db.p4OZnA/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,15 +18,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/TeamsApp" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Teams/user/admin.py" root0="SKIP_INSPECTION" />
@@ -53,7 +58,7 @@
     &quot;Python.settings.executor&quot;: &quot;Run&quot;,
     &quot;Python.views.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;&lt;unknown&gt;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/TeamsProject&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -61,7 +66,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -127,7 +132,9 @@
       <workItem from="1733647917371" duration="445000" />
       <workItem from="1733648372340" duration="27345000" />
       <workItem from="1733693535062" duration="598000" />
-      <workItem from="1733694681811" duration="38206000" />
+      <workItem from="1733694681811" duration="38454000" />
+      <workItem from="1733939891340" duration="6248000" />
+      <workItem from="1733949906760" duration="2853000" />
     </task>
     <servers />
   </component>

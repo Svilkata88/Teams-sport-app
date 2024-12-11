@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.views.generic import ListView, CreateView, DetailView, DeleteView
+from django.shortcuts import render, redirect
+from django.views.generic import ListView, CreateView, DetailView, DeleteView, UpdateView
 from django.urls import reverse_lazy
 from matches.forms import MatchCreateForm
 from matches.models import Matches
@@ -28,6 +28,10 @@ class CreateMatch(CreateView):
     template_name = 'matches/matches-create.html'
     success_url = reverse_lazy('matches-dashboard')
 
+    def form_valid(self, form):
+        form.instance.creator = self.request.user
+        return super().form_valid(form)
+
 
 class DetailMatch(DetailView):
     
@@ -52,4 +56,23 @@ class DeleteMatch(DeleteView):
         if match.creator != request.user:
             messages.error(request, "You are not authorized to delete this match.")
             return HttpResponseRedirect(reverse_lazy('matches-dashboard'))
+        return super().dispatch(request, *args, **kwargs)
+
+
+class UpdateMatch(UpdateView):
+    model = Matches
+    fields = ['home_team', 'away_team', 'referee', 'status', 'playground', 'date', 'time']
+    form = MatchCreateForm
+    template_name = 'matches/matches-update.html'
+    success_url = reverse_lazy('matches-dashboard')
+
+    def dispatch(self, request, *args, **kwargs):
+        try:
+            obj = self.get_object()
+            if obj.creator != self.request.user:
+                raise PermissionError("You are not authorized to update this match.")
+        except PermissionError as error:
+            messages.error(request, str(error))
+            return redirect('matches-dashboard')
+
         return super().dispatch(request, *args, **kwargs)

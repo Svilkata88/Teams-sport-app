@@ -4,4 +4,25 @@
     font-family: "Sour Gummy", sans-serif;
     letter-spacing: 1px;
     text-align: center;
+    color: #ffffcc;
+}
+
+
+footer {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: darkslategray;
+}
+
+footer i {
+    font-size: 36px;
+    color: #ffffcc;
+    transition: 0.3s;
+}
+
+footer i:hover {
+    color: cornflowerblue;
 }
