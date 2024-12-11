@@ -1,8 +1,10 @@
 from django.shortcuts import render
-from django.views.generic import ListView, CreateView
-
+from django.views.generic import ListView, CreateView, DetailView, DeleteView
+from django.urls import reverse_lazy
 from matches.forms import MatchCreateForm
 from matches.models import Matches
+from django.http import HttpResponseRedirect
+from django.contrib import messages
 
 
 class MatchesDashboard(ListView):
@@ -24,5 +26,30 @@ class CreateMatch(CreateView):
     model = Matches
     form_class = MatchCreateForm
     template_name = 'matches/matches-create.html'
-    success_url = 'matches-dashboard.html'
+    success_url = reverse_lazy('matches-dashboard')
 
+
+class DetailMatch(DetailView):
+    
+    template_name = 'matches/match-detail.html'
+    context_object_name = 'match' 
+
+    def get_object(self):
+        pk = self.kwargs.get('pk')  
+        return Matches.objects.get(pk=pk)
+    
+    def get_queryset(self):
+        return Matches.objects.all()
+    
+
+class DeleteMatch(DeleteView):
+    model = Matches
+    template_name = 'matches/match-detail.html'
+    success_url = reverse_lazy('matches-dashboard')
+  
+    def dispatch(self, request, *args, **kwargs):
+        match = self.get_object()
+        if match.creator != request.user:
+            messages.error(request, "You are not authorized to delete this match.")
+            return HttpResponseRedirect(reverse_lazy('matches-dashboard'))
+        return super().dispatch(request, *args, **kwargs)

@@ -29,13 +29,13 @@
         <div class="matches-container col-span-5">
             <h4 class="text-white text-center pb-2">All games</h4>
             {% for match in matches %}
-                <div class="game-row">
+                <a href="{% url 'match-detail' match.pk %}" class="game-row">
                     <div class="home-team">{{ match.home_team }}</div>
                     <div class="result-home">{{ match.home_team_score }}</div>
                     <div class="vs"> VS </div>
                     <div class="result-away">{{ match.away_team_score }}</div>
                     <div class="away-team">{{ match.away_team }}</div>
-                </div>
+                </a>
             {% endfor %}
         </div>
         <div class="col-span-1"></div>

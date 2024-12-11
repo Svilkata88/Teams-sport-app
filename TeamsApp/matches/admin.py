@@ -4,13 +4,13 @@ from matches.models import Matches, Referee, Playground
 
 @admin.register(Matches)
 class MatchesAdmin(admin.ModelAdmin):
-    list_display = ['home_team', 'away_team', 'referee', 'home_team_score', 'away_team_score', 'status', 'game_datetime', 'creator']
+    list_display = ['home_team', 'away_team', 'referee', 'home_team_score', 'away_team_score', 'status', 'date', 'time', 'creator']
     list_filter = ['referee', 'status', 'creator']
     search_fields = ['home_team', 'away_team', 'status', 'referee', 'creator']
 
     fieldsets = (
         ('Match Details', {
-            'fields': ('home_team', 'away_team', 'home_team_score', 'away_team_score', 'status', 'game_datetime')
+            'fields': ('home_team', 'away_team', 'home_team_score', 'away_team_score', 'status', 'date', 'time')
         }),
         ('Additional Information', {
             'fields': ('referee', 'playground', 'creator')

@@ -1,0 +1,54 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block title %}Create match{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/match-detail.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+    {% include 'common/delete-confirmation.html' %}
+
+    <div class="match-container">
+        <h1 class="text-white text-center text-xl m-5 col-span-3">Match {{match.pk}} details</h1>
+        <div class="datetime">
+            <div class="date">Date: {{match.date}}</div>
+            |
+            <div class="time">Time: {{match.time}}</div>
+        </div>
+        <div class="teams">
+            <div class="home_team">{{match.home_team}}</div>
+            <div><span class="results">{{match.home_team_score}}</span> <span class="vs">VS</span> <span class="results">{{match.away_team_score}}</span></div>
+            <div class="away_team">{{match.away_team}}</div>
+        </div>
+        <div class="referee">Referee: {{match.referee}}</div>
+        <div class="playground">Playground: {{match.playground}}</div>
+
+        
+        <div class="buttons flex justify-center">
+            <!-- {# UPDATE BUTTON #} -->
+            <a href="#"
+                class="px-2 my-2 text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                Update
+            </a>
+            {# DELETE BUTTON #}
+            <form action="{% url 'match-delete' match.pk %}" method="POST">
+                {% csrf_token %}
+                <button type="submit"
+                    class="px-2 my-2 text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-2 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                    Delete
+                </button>
+            </form>
+        </div>
+        
+        <div class="creator">Creator: {{match.creator}}</div>
+    </div>
+
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'js/delete-confirmation.js' %}"></script>
+{% endblock %}

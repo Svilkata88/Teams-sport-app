@@ -36,11 +36,15 @@ class Matches(models.Model):
     status = models.CharField(choices=StatusChoices.choices, default=StatusChoices.SCHEDULED)
     playground = models.ForeignKey(to='matches.Playground', on_delete=models.CASCADE, related_name='pitch_matches')
     date_added = models.DateField(auto_now_add=True, editable=False)
-    game_datetime = models.DateField()
+    date = models.DateField()
+    time = models.TimeField()
     creator = models.ForeignKey(to=Player, null=True, on_delete=models.SET_NULL, related_name='created_matches')
 
     def __str__(self):
         return f'{self.home_team} vs {self.away_team} | status: {self.status}'
+    
+    class Meta:
+        ordering = ['-pk'] 
 
 
 
