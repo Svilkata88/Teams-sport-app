@@ -12,6 +12,10 @@
     opacity: 0.9;
 }
 
+#h1 {
+    font-family: "Sour Gummy", sans-serif !important;
+}
+
 .game-row {
     display: flex;
     justify-content: space-between;
@@ -21,6 +25,14 @@
     padding: 0 15px;
     border-radius: 8px;
     overflow: hidden;
+    transition: height 0.3s ease, font-size 0.3s ease, background-color 0.3s ease;
+}
+
+.game-row:hover {
+    height: 30px; /* Make the height noticeable */
+    font-size: 24px;
+    background-color: #d4edda;
+    align-items: center;
 }
 
 .vs {
@@ -50,4 +62,66 @@
     flex-grow: 1;
 }
 
+.status {
+    display: flex;
+    overflow: visible;
+    align-items: center;
+    justify-self: end;
+    padding: 0 0 0 10px;
+}
 
+.legend  {
+    display: flex;
+    gap: 10px;
+    justify-items: end;
+    margin-top: auto;
+}
+
+.legendChildrenDivs {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: lemonchiffon;
+    font-size: 14px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #007BFF;
+    margin: 0 10px;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+
+.pagination span {
+    font-weight: bold;
+}
+
+.legendChildrenDivs {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.legendChildrenDivs p {
+    margin-left: 10px;
+}
+
+.infoBox {
+    margin-top: auto;
+}
+
+#pages {
+    color: #d4edda;
+}

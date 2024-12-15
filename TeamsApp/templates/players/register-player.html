@@ -4,6 +4,7 @@
 {% block title %}Register Form{% endblock %}
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/register_form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/teams-details-page.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -16,6 +17,11 @@
                 <p class="form-input">{{ field }}</p>
                 <p class="form-help-text">{{ field.help_text }}</p>
             </div>
+            {% if field.errors %}
+                <p class="text-red-500 mt-1">
+                    {{ field.errors.as_text }}
+                </p>
+            {% endif %}
         {% endfor %}
         <button class="bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 px-4 rounded-xl my-5 w-2/3">Submit</button>
     </form>

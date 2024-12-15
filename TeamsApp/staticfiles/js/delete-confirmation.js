@@ -6,6 +6,7 @@ const deleteForm = document.getElementById('deleteForm');
 
 function showModal() {
     modal.style.display = 'flex';
+    console.log('showed')
 }
 
 function closeModal() {

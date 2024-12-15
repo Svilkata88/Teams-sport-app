@@ -41,6 +41,8 @@ def delete_team(request, pk):
 def create_team(request):
     form = TeamForm(request.POST or None)
     if request.method == 'POST':
+        form = TeamForm(request.POST, request.FILES)
+        print(request.FILES)
         if form.is_valid():
             team = form.save()
             team.administrators.add(request.user)

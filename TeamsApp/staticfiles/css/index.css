@@ -1,0 +1,35 @@
+
+#intro {
+    height: fit-content;
+    padding-top: 20px;
+    font-family: "Sour Gummy", sans-serif !important;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffcc;
+    font-size: xx-large;
+}
+
+.imagesBoxsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.imagesBox {
+    width: 170px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffcc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagesBox > img {
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border-radius: 8px;
+}

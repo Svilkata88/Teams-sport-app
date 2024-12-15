@@ -5,7 +5,9 @@
 h1 {
     color: white;
     text-align: center;
+    font-family: "Sour Gummy", sans-serif !important;
 }
+
 .player-card-container > p,
 .player-card-container > div {
     margin-right: 10px;
@@ -44,4 +46,22 @@ h1 {
     justify-items: center;
     align-items: center;
     gap: 13px;
+}
+
+#searchForm input:focus {
+    outline: none;
+    border: 3px solid lime; /
+    border-radius: 8px;
+    box-shadow: 0 0 5px lime;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#searchForm input {
+    border: 3px solid transparent;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+#searchBtn:hover {
+    border-color: lime;
 }

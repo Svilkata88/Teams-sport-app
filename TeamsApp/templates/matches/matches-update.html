@@ -11,7 +11,7 @@
 
     <form method="post" class="create-match-container">
         {% csrf_token %}
-        <h1 class="text-white text-center text-2xl m-2">Game details</h1>
+        <h1 class="text-white text-center text-2xl m-2">Game details update</h1>
         {% for field in form %}
             <div class="match-container-row">
                 <div class="row-label">{{ field.label }}</div>

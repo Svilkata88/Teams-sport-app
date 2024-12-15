@@ -1,5 +1,8 @@
 from django import forms
+from django.core.exceptions import ValidationError
+
 from players.models import Player
+from players.validators import PhoneNumberValidator
 from teams.models import Team
 
 FORM_CLASS_STYLES = 'form-input text-black border-2 border-gray-300 rounded-md p-2 w-full rounded-xl'
@@ -48,13 +51,23 @@ class RegisterPlayerForm(forms.ModelForm):
             }),
             'tel': forms.TextInput(attrs={
                 'class': FORM_CLASS_STYLES,
-                'placeholder': 'Phone number *',
+                'placeholder': 'Phone number * +349 --- --- ---',
             }),
             'password': forms.PasswordInput(attrs={
                 'class': FORM_CLASS_STYLES,
                 'placeholder': 'Password *',
             }),
         }
+
+    def clean_tel(self):
+        tel = self.cleaned_data.get('tel')
+        validator = PhoneNumberValidator()
+        try:
+            validator(tel)
+        except ValidationError:
+            raise ValidationError("Enter a valid 10-digit phone number.")
+
+        return tel
 
     def clean(self):
         cleaned_data = super().clean()

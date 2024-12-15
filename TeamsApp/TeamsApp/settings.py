@@ -136,4 +136,3 @@ LOGIN_REDIRECT_URL = 'players/teams/'
 
 AUTH_USER_MODEL = 'players.Player'
 
-

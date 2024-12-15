@@ -15,7 +15,6 @@ def player_login(request):
         username = request.POST.get('username')
         password = request.POST.get('password')
         user = authenticate(username=username, password=password)
-
         if user is not None:
             login(request, user)
             messages.success(request, f"You've been logged in!!! Welcome {username}")
@@ -72,7 +71,7 @@ def player_delete(request, pk):
     player = Player.objects.get(pk=pk)
     player.delete()
     messages.success(request, f'User {player.username} have been deleted!')
-    return redirect('index')
+    return redirect('matches-dashboard')
 
 
 def player_update_image(request, pk):
