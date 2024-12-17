@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from .forms import LoginPlayerForm, RegisterPlayerForm, UpdatePlayerImageForm, UpdatePlayerForm, PlayerSearchForm
 from players.models import Player
 from django.conf import settings
+from django.http import Http404
 
 
 def player_login(request):
@@ -68,10 +69,13 @@ def player_details(request, pk):
 
 
 def player_delete(request, pk):
-    player = Player.objects.get(pk=pk)
-    player.delete()
-    messages.success(request, f'User {player.username} have been deleted!')
-    return redirect('matches-dashboard')
+    try:
+        player = Player.objects.get(pk=pk)
+        player.delete()
+        messages.success(request, f'User {player.username} have been deleted!')
+        return redirect('matches-dashboard')
+    except Player.DoesNotExist:
+        raise Http404("Player not found")
 
 
 def player_update_image(request, pk):
