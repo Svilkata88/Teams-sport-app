@@ -30,7 +30,7 @@
 
 .game-row:hover {
     height: 30px; /* Make the height noticeable */
-    font-size: 24px;
+    font-size: 16px;
     background-color: #d4edda;
     align-items: center;
 }

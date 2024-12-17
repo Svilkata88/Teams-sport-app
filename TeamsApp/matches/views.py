@@ -2,10 +2,15 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from django.views.generic import ListView, CreateView, DetailView, DeleteView, UpdateView
 from django.urls import reverse_lazy
+from rest_framework.decorators import api_view
+from rest_framework.generics import ListAPIView
+
 from matches.forms import MatchCreateForm
 from matches.models import Matches
 from django.http import HttpResponseRedirect
 from django.contrib import messages
+
+from matches.serializers import MatchSerializer
 
 
 class MatchesDashboard(ListView):
@@ -98,3 +103,9 @@ class UpdateMatch(UpdateView):
             return redirect('matches-dashboard')
 
         return super().dispatch(request, *args, **kwargs)
+
+
+class RestMatches(ListAPIView):
+    queryset = Matches.objects.all()
+    serializer_class = MatchSerializer
+    http_method_names = ['get']

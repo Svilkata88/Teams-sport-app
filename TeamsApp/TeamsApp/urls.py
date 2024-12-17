@@ -10,6 +10,7 @@ urlpatterns = [
     path('players/', include('players.urls')),
     path('teams/', include('teams.urls')),
     path('matches/', include('matches.urls')),
+    path('tournaments/', include('tournaments.urls')),
 ]
 
 if settings.DEBUG:

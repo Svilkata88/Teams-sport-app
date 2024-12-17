@@ -10,4 +10,5 @@ urlpatterns = [
     path('update-player/<int:pk>', views.player_update, name='update-player'),
     path('delete/<int:pk>', views.player_delete, name='delete-player'),
     path('update-image/<int:pk>', views.player_update_image, name='update-player-image'),
+    path('rest/', views.rest_players_all, name='rest-players-all')
 ]

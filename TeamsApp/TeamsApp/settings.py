@@ -26,11 +26,13 @@ INSTALLED_APPS = [
 
     'cloudinary',
     'cloudinary_storage',
+    'rest_framework',
 
     'teams',
     'players',
     'matches',
     'common',
+    'tournaments'
 ]
 
 MIDDLEWARE = [

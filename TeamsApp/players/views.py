@@ -1,10 +1,17 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.http import Http404
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy
+from rest_framework import status
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
 from .forms import LoginPlayerForm, RegisterPlayerForm, UpdatePlayerImageForm, UpdatePlayerForm, PlayerSearchForm
 from players.models import Player
 from django.conf import settings
+
+from .serializers import PlayerSerializer
 
 
 def player_login(request):
@@ -68,10 +75,13 @@ def player_details(request, pk):
 
 
 def player_delete(request, pk):
-    player = Player.objects.get(pk=pk)
-    player.delete()
-    messages.success(request, f'User {player.username} have been deleted!')
-    return redirect('matches-dashboard')
+    try:
+        player = Player.objects.get(pk=pk)
+        player.delete()
+        messages.success(request, f'User {player.username} have been deleted!')
+        return redirect('matches-dashboard')
+    except Player.DoesNotExist:
+        raise Http404("Player not found")
 
 
 def player_update_image(request, pk):
@@ -114,3 +124,11 @@ def players_dashboard(request):
     }
 
     return render(request, 'players/players-dashboard.html', context)
+
+
+@api_view(['GET'])
+def rest_players_all(request):
+    players = Player.objects.all()
+    serializer = PlayerSerializer(players, many=True)
+
+    return Response(serializer.data, status=status.HTTP_200_OK)

@@ -44,7 +44,10 @@ class Matches(models.Model):
         return f'{self.home_team} vs {self.away_team} | status: {self.status}'
     
     class Meta:
-        ordering = ['-pk'] 
+        ordering = ['-pk']
+
+
+
 
 
 
