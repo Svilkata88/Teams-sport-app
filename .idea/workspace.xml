@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TeamsProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TeamsProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/543315e9-62b0-44f0-b364-025cf1722f8a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/543315e9-62b0-44f0-b364-025cf1722f8a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/543315e9-62b0-44f0-b364-025cf1722f8a/storage_v2/_src_/database/teams_db.p4OZnA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/543315e9-62b0-44f0-b364-025cf1722f8a/storage_v2/_src_/database/teams_db.p4OZnA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +56,7 @@
     "Python.settings.executor": "Run",
     "Python.views.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "D:/TeamsProject",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -161,7 +158,7 @@
       <workItem from="1733939891340" duration="6248000" />
       <workItem from="1733949906760" duration="6117000" />
       <workItem from="1734175751015" duration="60232000" />
-      <workItem from="1734542295269" duration="16343000" />
+      <workItem from="1734542295269" duration="17207000" />
     </task>
     <servers />
   </component>

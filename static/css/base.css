@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+#teamsText {
+    font-family: "Sour Gummy", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffcc;
+}
+
+
+footer {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: darkslategray;
+}
+
+footer i {
+    font-size: 36px;
+    color: #ffffcc;
+    transition: 0.3s;
+}
+
+footer i:hover {
+    color: cornflowerblue;
+}
