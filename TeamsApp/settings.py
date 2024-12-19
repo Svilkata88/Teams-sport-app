@@ -9,11 +9,12 @@ from cloudinary.utils import cloudinary_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# SECRET_KEY = config('SECRET_KEY')
-SECRET_KEY = 'sadnaojhdasdnjoasdohasdnsandoasdasodbasidisabdasd' 
+SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
+
+CSRF_TRUSTED_ORIGINS = config('TRUSTED_ORIGINS', default='').split(',')
 
 INSTALLED_APPS = [
     'unfold',
