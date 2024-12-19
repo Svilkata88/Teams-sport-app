@@ -10,6 +10,7 @@ from rest_framework.response import Response
 from .forms import LoginPlayerForm, RegisterPlayerForm, UpdatePlayerImageForm, UpdatePlayerForm, PlayerSearchForm
 from players.models import Player
 from django.conf import settings
+from django.http import Http404
 
 from .serializers import PlayerSerializer
 

@@ -4,14 +4,14 @@
 
 {% block title %}Tournaments dasgboard{% endblock %}
 {% block head %}
-    <link rel="stylesheet" href="{% static 'css/matches-dashboard.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tournaments-dashboard.css' %}">
 {% endblock %}
 
 
 {% block content %}
 
-    Да се показва само ако юзера е в група stuff
-    <div class="grid grid-cols-5 gap-1 ">
+    {% if can_create %}
+        <div class="grid grid-cols-5 gap-1 ">
         <a href="{% url 'tournament-create' %}" class="p-3">
             <button type="button" id="redirectTeamBtn">
                     <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="40px" width="40px" version="1.1" id="Capa_1" viewBox="0 0 32 32" xml:space="preserve">
@@ -25,18 +25,27 @@
         </a>
         <h1 class="text-white text-center text-2xl m-5 col-span-3" id="h1">Tournaments</h1>
     </div>
+    {% endif %}
 
-    <div class="grid grid-cols-5">
-        <div class="col-span-1"></div>
-        <div class="matches-container col-span-5">
-            <h4 class="text-white text-center pb-2">All games</h4>
-
-            {% for t in tournaments %}
-                <p>{{ t }}</p>
+    <div class="matches-container col-span-3">
+        <div class="matches-at-play">
+            <h4 class="text-white text-center pb-2">Ended</h4>
+            {% for t in ended_games %}
+                <p class="t-row">{{ t }}</p>
             {% endfor %}
-
         </div>
-        <div class="col-span-1"></div>
+        <div class="matches-at-play">
+            <h4 class="text-white text-center pb-2">At play</h4>
+            {% for t in at_play_games %}
+                <p class="t-row">{{ t }}</p>
+            {% endfor %}
+        </div>
+        <div class="matches-at-play">
+            <h4 class="text-white text-center pb-2">Coming soon</h4>
+            {% for t in coming_soon_and_postponed %}
+                <p class="t-row">{{ t }}</p>
+            {% endfor %}
+        </div>
     </div>
 
 

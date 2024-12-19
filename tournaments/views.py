@@ -15,6 +15,20 @@ class DashboardTournaments(ListView):
         queryset = Tournament.objects.all().order_by('-created_at')
         return queryset
 
+    def get_context_data(self, *args, **kwargs):
+        queryset = self.get_queryset()
+        context = super().get_context_data(*args, **kwargs)
+        context['ended_games'] = queryset.filter(status=Tournament.StatusChoices.FINISHED)
+        context['at_play_games'] = queryset.filter(status=Tournament.StatusChoices.PLAYING)
+        context['coming_soon_and_postponed'] = queryset.filter(
+            status__in=[
+                Tournament.StatusChoices.SCHEDULED, Tournament.StatusChoices.POSTPONED
+        ])
+        context['can_create'] = (self.request.user.groups.filter(name="Tournament Staff").exists()
+                                 or self.request.user.is_superuser)
+
+        return context
+
 
 class CreateTournament(CreateView):
     model = Tournament

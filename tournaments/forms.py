@@ -35,10 +35,20 @@ class TournamentForm(forms.ModelForm):
             }),
         }
 
-    def clean_teams(self):
+    def clean(self):
         n_participants = self.cleaned_data.get('number_of_participants')
         teams = self.cleaned_data.get('teams')
-        if n_participants < len(teams):
-            raise ValidationError('Teams can not be more than max teams number')
 
-        return teams
+        if len(teams) > n_participants:
+            self.add_error(
+                'number_of_participants',
+                f'Max teams number must be greater than or equal to the number of selected teams ({len(teams)}).'
+            )
+
+        if len(teams) < 2:
+            self.add_error(
+                'teams',
+                'You must select at least 2 teams.'
+            )
+
+        return self.cleaned_data

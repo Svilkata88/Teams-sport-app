@@ -28,6 +28,10 @@
                     <a href="{% url 'teams-dashboard' %}">Teams</a>
                 </li>
 
+                <li class="px-2 hover:text-lime-500 border-b-2 border-transparent hover:border-lime-500">
+                    <a href="{% url 'tournament-dashboard' %}">Tournaments</a>
+                </li>
+
                 {% if user.is_authenticated %}
                     <li class="flex items-center px-2 text-yellow-300 ">
                         <a href="{% url 'details-page' user.pk %}"><p class="pr-2 text-xl" id="teamsText">{{ user.username }}</p></a>
