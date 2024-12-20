@@ -133,6 +133,8 @@ STORAGES = {
 
 WHITENOISE_MAX_AGE = 31536000
 
+CSRF_COOKIE_SECURE = True
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/TeamsApp/'
