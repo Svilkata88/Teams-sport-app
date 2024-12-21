@@ -15,7 +15,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
 
-# CSRF_TRUSTED_ORIGINS = config('TRUSTED_ORIGINS', default='').split(',')
+CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS').split(',')
 
 INSTALLED_APPS = [
     'unfold',
@@ -136,7 +137,6 @@ WHITENOISE_MAX_AGE = 31536000
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/TeamsApp/'
-# MEDIA_ROOT = 'https://console.cloudinary.com/pm/c-4f66cfaf80626ef74ab815e71e2c96/media-explorer/'
 
 LOGIN_URL = '/players/login/'
 LOGIN_REDIRECT_URL = 'players/teams/'

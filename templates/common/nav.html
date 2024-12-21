@@ -9,13 +9,13 @@
                 text-white
                 border-b-4 border-white">
 
-        <div class="flex items-center ">
-            <a href="{% url 'matches-dashboard' %}"><img src="{% static 'images/football_icon.png' %}" alt="" class="rounded-full w-full h-10"></a>
-            <p class="pl-5 text-2xl" id="teamsText">Welcome to Teams</p>
+        <div class="flex items-center">
+            <a href="{% url 'matches-dashboard' %}"><img src="{% static 'images/football_icon.png' %}" alt="" class="rounded-full w-full h-10 transition-transform duration-200 hover:scale-110"></a>
+            <p class="lg:pl-5 lg:text-2xl text-3xl" id="teamsText">Welcome to Teams</p>
         </div>
 
         <div>
-            <ul class="flex">
+            <ul class="flex sm:text-3xl lg:text-lg">
                 <li class="px-2 hover:text-lime-500 border-b-2 border-transparent hover:border-lime-500">
                     <a href="{% url 'matches-dashboard' %}">Home</a>
                 </li>
@@ -33,10 +33,10 @@
                 </li>
 
                 {% if user.is_authenticated %}
-                    <li class="flex items-center px-2 text-yellow-300 ">
-                        <a href="{% url 'details-page' user.pk %}"><p class="pr-2 text-xl" id="teamsText">{{ user.username }}</p></a>
+                    <li class="flex items-center px-2 text-yellow-300">
+                        <a href="{% url 'details-page' user.pk %}"><p class="sm:text-3xl lg:text-2xl pr-2 text-xl text transition-transform duration-200 hover:scale-110" id="teamsText">{{ user.username }}</p></a>
                         <a href="{% url 'logout-page' %}">
-                            <svg class="w-4 h-4 ms-1 fill-current text-red-500 hover:text-red-400" width="20" height="18"
+                            <svg class="sm:text-3xl lg:text-xl w-4 h-4 ms-1 fill-current text-red-500 hover:text-red-400" width="20" height="18"
                                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/>
                             </svg>
@@ -44,10 +44,10 @@
                     </li>
                 {% else %}
                     <li class="px-2 hover:text-lime-500 border-b-2 border-transparent hover:border-lime-500">
-                        <a href="{% url 'register_player' %}">Register</a>
+                        <a href="{% url 'register_player' %}" class="sm:text-3xl lg:text-lg">Register</a>
                     </li>
                     <li class="px-2 hover:text-lime-500 border-b-2 border-transparent hover:border-lime-500">
-                        <a href="{% url 'login' %}">Login</a>
+                        <a href="{% url 'login' %}" class="sm:text-3xl lg:text-lg">Login</a>
                     </li>
                 {% endif %}
             </ul>

@@ -5,8 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/teams.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/teams-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.css.gz" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/teams-dashboard.css.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/staticfiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/matches-create.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/matches-create.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/matches-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/matches-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/players-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/players-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/teams-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/teams-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/teams-details-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/teams-details-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teams/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/teams/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/common/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/matches/matches-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matches/matches-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/matches/matches-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matches/matches-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/players/players-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/players/players-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teams/teams-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teams/teams-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teams/teams-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teams/teams-details-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tournaments/dashboard-tournament.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tournaments/dashboard-tournament.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +76,7 @@
     "Python.views.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/TeamsProject",
+    "last_opened_file_path": "D:/TeamsProject/staticfiles/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -76,6 +94,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TeamsProject\staticfiles\images" />
       <recent name="D:\TeamsProject\TeamsApp" />
       <recent name="D:\TeamsProject\TeamsApp\staticfiles\images" />
       <recent name="D:\TeamsProject\Teams\static" />
@@ -159,7 +178,8 @@
       <workItem from="1733939891340" duration="6248000" />
       <workItem from="1733949906760" duration="6117000" />
       <workItem from="1734175751015" duration="60232000" />
-      <workItem from="1734542295269" duration="25030000" />
+      <workItem from="1734542295269" duration="29167000" />
+      <workItem from="1734766457490" duration="25523000" />
     </task>
     <servers />
   </component>

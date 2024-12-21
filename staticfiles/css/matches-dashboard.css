@@ -125,3 +125,41 @@
 #pages {
     color: #d4edda;
 }
+
+@media (max-width: 1080px) {
+    .matches-container {
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: black;
+        width: 90%;
+        min-height: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: darkslategrey;
+        border-radius: 15px;
+        opacity: 0.9;
+    }
+
+    #h1 {
+        font-size: 2rem;
+    }
+
+    .game-row {
+        width: 95%;
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+
+    .legendChildrenDivs {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: lemonchiffon;
+        font-size: 2rem;
+    }
+}
+
+
+

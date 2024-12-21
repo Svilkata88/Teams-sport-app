@@ -32,6 +32,9 @@ def team_details(request, pk):
 def delete_team(request, pk):
     team = Team.objects.get(pk=pk)
     if request.method == 'POST':
+        if request.user not in team.administrators.all() or not request.user.is_superuser:
+            messages.error(request, "You need to be administrator or super user to perform this action!")
+            return redirect(reverse_lazy('teams-dashboard'))
         team.delete()
         messages.success(request, f'The team {team.name} has been deleted.')
         return redirect(reverse_lazy('teams-dashboard'))

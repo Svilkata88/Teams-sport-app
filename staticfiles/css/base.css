@@ -26,3 +26,21 @@ footer i {
 footer i:hover {
     color: cornflowerblue;
 }
+
+@media (max-width: 1080px) {
+    body {
+        height: 100vh;
+    }
+
+    #base {
+        background-size: auto 100%;
+    }
+
+    footer {
+        gap: 4rem;
+    }
+
+    footer i {
+        font-size: 5rem;
+    }
+}
