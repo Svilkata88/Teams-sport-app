@@ -146,4 +146,4 @@ LOGIN_REDIRECT_URL = 'players/teams/'
 
 AUTH_USER_MODEL = 'players.Player'
 
-CSRF_FAILURE_VIEW = "myapp.views.csrf_failure"
+CSRF_FAILURE_VIEW = ""players.views.csrf_failure""
