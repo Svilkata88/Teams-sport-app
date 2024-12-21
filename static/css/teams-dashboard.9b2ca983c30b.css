@@ -1,12 +1,13 @@
 .teamCardContainer {
     position: relative;
-    background: linear-gradient(90deg, rgba(183,195,192,0.9977240896358543) 19%, rgba(44,134,158,1) 54%);
+    background: linear-gradient(135deg, rgba(25,40,36,1) 27%, rgba(20,109,133,0.9949229691876751) 72%);
     padding: 10px;
     border-radius: 15px;
     word-wrap: break-word;
     height: 200px;
     overflow: hidden;
-    box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 13px 2px #1b1b1b;
+    color: #bbf7d0;
 }
 
 #h1 {
@@ -32,14 +33,36 @@
 .teamCardContainer h1 {
     font-size: x-large;
     font-weight: bold;
-    color: #00363a;
+    color: #bbf7d0;
     padding-bottom: 5px;
 }
 
 .teamCardContainer p:nth-child(5) {
-    color: #e74c3c;
+    color: #d58512;
     font-weight: bold;
     position: absolute;
     bottom: 10px;
     left: 10px;
+}
+
+@media (max-width: 480px) {
+    .teamCardContainer {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .teamCardContainer h1 {
+        font-size: xx-large;
+        font-weight: bold;
+        color: #bbf7d0;
+        padding-bottom: 5px;
+    }
+
+    .teamLogoContainer {
+        border: 2px solid cornflowerblue;
+        height: 100px;
+        width: 100px;
+        margin-right: 20px;
+    }
+
 }
