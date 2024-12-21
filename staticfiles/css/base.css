@@ -27,7 +27,7 @@ footer i:hover {
     color: cornflowerblue;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 480px) {
     body {
         height: 100vh;
     }
