@@ -15,7 +15,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
 
-# CSRF_TRUSTED_ORIGINS = config('TRUSTED_ORIGINS', default='').split(',')
+CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS').split(',')
 
 INSTALLED_APPS = [
     'unfold',
@@ -133,9 +134,6 @@ STORAGES = {
 
 WHITENOISE_MAX_AGE = 31536000
 
-CSRF_COOKIE_SECURE = True
-CSRF_TRUSTED_ORIGINS = config('CSRF_TRUSTED_ORIGINS')
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/TeamsApp/'
@@ -146,4 +144,3 @@ LOGIN_REDIRECT_URL = 'players/teams/'
 
 AUTH_USER_MODEL = 'players.Player'
 
-CSRF_FAILURE_VIEW = ""players.views.csrf_failure""
