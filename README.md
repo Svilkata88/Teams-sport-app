@@ -1,6 +1,7 @@
 ﻿# Teams-sport-app
 An app connecting players ( in this stage sport present in the app is only football ), allowing them to create teams, to arrange matches and tracking the results.
 
+deployed at: https://teams-dje7hjedc3bkajd7.italynorth-01.azurewebsites.net/matches/home
 
 Improvements plan:
 1. add a lot of validators
