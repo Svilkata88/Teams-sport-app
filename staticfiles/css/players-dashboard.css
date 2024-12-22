@@ -67,14 +67,10 @@ h1 {
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
 
     .player-card-container {
         display: flex;
-        gap: 2rem;
+        gap: 0.5rem;
         align-items: center;
         justify-self: center;
         padding: 5px;
@@ -85,24 +81,23 @@ h1 {
     }
 
     .player-detail-img-container {
-        width: 100px;
+        min-width: 3.5rem;
         height: auto;
         margin-right: 20px;
         border-radius: 25px;
     }
 
     .search-box {
-        gap: 2rem;
-        font-size: 2.5rem;
+        gap: 0.5rem;
+        font-size: 1.5rem;
         margin-top: 2rem;
     }
 
     .search-box > div{
-        margin-left: 200px;
-        width: 50%;
+        width: 80%;
     }
 
     .player-card-container img {
-        height: 5rem !important;
+        /*height: 2rem !important;*/
     }
 }

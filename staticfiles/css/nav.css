@@ -1,0 +1,48 @@
+
+
+#teamsText {
+    font-family: "Sour Gummy", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffcc;
+}
+
+#loggedUser {
+    font-family: "Sour Gummy", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffcc;
+}
+
+#dropdown #trigger {
+        display: none;
+    }
+
+@media (max-width: 480px) {
+    #teamsText {
+        letter-spacing: 1px;
+        text-align: center;
+        color: #ffffcc;
+    }
+
+    #loggedUser {
+        letter-spacing: 1px;
+        color: #ffffcc;
+        margin-bottom: 10px;
+        text-align: start;
+    }
+
+    #dropdown li {
+        display: none; /* Hide all list items */
+    }
+
+    #dropdown #trigger {
+        display: block; /* Always display the first item */
+    }
+
+    /* When the dropdown is active, show all list items */
+    #dropdown.active li {
+        display: block;
+    }
+
+}

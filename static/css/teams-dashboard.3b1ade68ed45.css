@@ -45,14 +45,14 @@
     left: 10px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 480px) {
     .teamCardContainer {
         margin-bottom: 1rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .teamCardContainer h1 {
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold;
         color: #bbf7d0;
         padding-bottom: 5px;

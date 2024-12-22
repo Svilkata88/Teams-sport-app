@@ -128,7 +128,7 @@
 
 @media (max-width: 480px) {
     .matches-container {
-        font-size: 2.5rem;
+        font-size: 1.2rem;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -149,15 +149,15 @@
     .game-row {
         width: 95%;
         margin-bottom: 10px;
-        padding: 0 10px;
+        padding: 0 8px;
     }
 
     .legendChildrenDivs {
         display: flex;
-        gap: 5px;
+        gap: 3px;
         align-items: center;
         color: lemonchiffon;
-        font-size: 2rem;
+        font-size: 0.5rem;
     }
 }
 
