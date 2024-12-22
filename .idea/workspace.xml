@@ -554,12 +554,8 @@
       <change beforePath="$PROJECT_DIR$/static/cloudinary/js/load-image.all.min.d0068a911289.js.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/cloudinary/js/load-image.all.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/cloudinary/js/load-image.all.min.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.2ee643023f70.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.2ee643023f70.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.6deaaa135c64.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.6deaaa135c64.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.83281bce2c06.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.83281bce2c06.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/base.69f0e4ebca3e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/base.69f0e4ebca3e.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/base.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/create-team.862192390516.css" beforeDir="false" />
@@ -590,42 +586,26 @@
       <change beforePath="$PROJECT_DIR$/static/css/matches-create.21a959ba1c07.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/matches-create.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/matches-create.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/matches-create.e146cbea2c64.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/matches-create.e146cbea2c64.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.33ac6270e402.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.33ac6270e402.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.56ee775dbe75.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.56ee775dbe75.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.a83db0364c0b.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.a83db0364c0b.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.9616a7eebbb4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.9616a7eebbb4.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/matches-dashboard.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.1ea74b892f4f.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.1ea74b892f4f.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.2f7b897b4771.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.2f7b897b4771.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.41ccf2c6fb72.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.41ccf2c6fb72.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/nav.96698b7582b2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/nav.96698b7582b2.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/nav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/nav.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.3e07c31c8aad.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.3e07c31c8aad.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/players-dashboard.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/register_form.3df3e3cba197.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/register_form.3df3e3cba197.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/register_form.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/register_form.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.4c244d4572e3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.4c244d4572e3.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.9b2ca983c30b.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.9b2ca983c30b.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.9b90e645db41.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.9b90e645db41.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.bad050365cd0.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.bad050365cd0.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.3b1ade68ed45.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.3b1ade68ed45.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/teams-dashboard.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-details-page.2667c36cb212.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-details-page.2667c36cb212.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-details-page.bfda23ca9011.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/teams-details-page.bfda23ca9011.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/teams-details-page.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/teams-details-page.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/teams-details-page.f5057c736f01.css" beforeDir="false" />
@@ -638,8 +618,8 @@
       <change beforePath="$PROJECT_DIR$/static/css/tournament-create.c4349ee1dca5.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/tournament-create.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/tournament-create.css.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/tournaments-dashboard.0cd4119b00c9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/tournaments-dashboard.0cd4119b00c9.css.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/tournaments-dashboard.43e40455c2e1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/tournaments-dashboard.43e40455c2e1.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/tournaments-dashboard.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/tournaments-dashboard.css.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/update-player.3fe855a8176a.css" beforeDir="false" />
@@ -672,6 +652,10 @@
       <change beforePath="$PROJECT_DIR$/static/js/detailsPlayer.df1e63909eec.js.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/detailsPlayer.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/detailsPlayer.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/nav.6f53ac063ba8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/nav.6f53ac063ba8.js.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/nav.js.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/playersDashboard.f39902f68470.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/playersDashboard.f39902f68470.js.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/playersDashboard.js" beforeDir="false" />
@@ -871,14 +855,11 @@
       <change beforePath="$PROJECT_DIR$/static/unfold/js/simplebar.e7c42525db6e.js.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/unfold/js/simplebar.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/unfold/js/simplebar.js.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staticfiles/css/matches-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/matches-dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staticfiles/css/players-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/players-dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/staticfiles/css/teams-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/teams-dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/tournaments-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/tournaments-dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/common/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/players/players-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/players/players-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teams/teams-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teams/teams-dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1034,7 +1015,7 @@
       <workItem from="1733949906760" duration="6117000" />
       <workItem from="1734175751015" duration="60232000" />
       <workItem from="1734542295269" duration="29167000" />
-      <workItem from="1734766457490" duration="41125000" />
+      <workItem from="1734766457490" duration="44783000" />
     </task>
     <servers />
   </component>

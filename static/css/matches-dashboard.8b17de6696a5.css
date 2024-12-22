@@ -154,10 +154,15 @@
 
     .legendChildrenDivs {
         display: flex;
-        gap: 3px;
+        gap: 1px;
         align-items: center;
         color: lemonchiffon;
-        font-size: 0.5rem;
+        font-size: 0.4rem;
+        padding: 4px;
+    }
+
+    .legendChildrenDivs p {
+        margin-left: 4px;
     }
 }
 

@@ -49,6 +49,7 @@
     .teamCardContainer {
         margin-bottom: 1rem;
         font-size: 1rem;
+        background: linear-gradient(135deg, rgba(25,40,36,1) 27%, rgba(20,109,133,0.9949229691876751) 72%);
     }
 
     .teamCardContainer h1 {
