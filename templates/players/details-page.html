@@ -11,11 +11,11 @@
     {% include 'common/delete-confirmation.html' %}
 
     <div class="card-container">
-        <h1 class="text-2xl justify-self-center">Player's details</h1>
-        <br>
+        <h1 class="text-2xl justify-self-center">{{ player.username }}'s details</h1>
 
         <div class="card-content">
-            <div>
+            {# IMAGE DETAILS#}
+            <div class="card-image-container">
                 {# IMAGE PLACEHOLDER #}
                 <div class="card-image">
                     {% if player.image %}
@@ -28,9 +28,9 @@
                 {% if request.user.is_authenticated and request.user.pk == player.pk %}
                     <form action="{% url 'update-player-image' player.pk %}" method="POST" enctype="multipart/form-data" style="display:block; float:left">
                         {% csrf_token %}
-                        <p class="pt-2"  id="playerImg">{{ form.image }}</p>
+                        <div class="pt-2"  id="playerImg">{{ form.image }}</div>
                         <button type="submit" id="buttonUploadImage"
-                            class="px-2 my-2 text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                            class="px-2 lg:my-2 text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center lg:me-2 lg:mb-2">
                             Confirm image
                         </button>
                     </form>
@@ -40,23 +40,18 @@
             {# PROFILE DETAILS #}
             <div class="card-details">
                 <p><strong>Username: </strong>{{ player.username }}</p>
-                <br>
-                {% if player.get_full_name %}
+                {% if player.get_full_name != None %}
                     <p><strong>Name: </strong>{{ player.get_full_name }}</p>
                 {% else %}
-                    <p><strong>Name: </strong></p>
+                    <p><strong>Name: Not available!</strong></p>
                 {% endif %}
-                <br>
                 <p><strong>Phone number: </strong>{{ player.tel }}</p>
-                <br>
                 <p><strong>Email: </strong>{{ player.email }}</p>
-                <br>
                 {% if player.team %}
                     <p><strong>Team: </strong>{{ player.team }}</p>
                 {% else %}
                     <p><strong>Team: </strong>Still not in any team!</p>
                 {% endif %}
-                <br>
                 <p><strong>Joined on: </strong>{{ player.date_joined }}</p>
             </div>
         </div>
@@ -85,4 +80,5 @@
 {% block script %}
     <script src="{% static 'js/detailsPlayer.js' %}"></script>
     <script src="{% static 'js/delete-confirmation.js' %}"></script>
+    <script src="{% static 'js/nav.js' %}"></script>
 {% endblock %}

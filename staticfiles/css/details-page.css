@@ -3,7 +3,8 @@ body > div:nth-child(2){
 }
 
 .card-container {
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
     color: white;
     width: 50%;
     height: 500px;
@@ -64,4 +65,68 @@ body > div:nth-child(2){
 
 #buttonUploadImage {
     width: 100%;
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        display: block;
+        width: 90%;
+        min-height: fit-content;
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .card-container > h1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .card-content {
+        display: block;
+    }
+
+    .card-content > div {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .card-image-container {
+        margin-bottom: 80px;
+    }
+
+    .card-image {
+        width: 50%;
+        height: auto;
+        justify-self: center;
+        overflow: hidden;
+        border-radius: 35px;
+    }
+
+    #playerImg {
+        justify-self: center;
+        width: 35%;
+    }
+
+    #buttonUploadImage {
+        display: block;
+        width: 50%;
+        margin: 5px auto;
+    }
+
+    .card-details {
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+    .card-details > p:nth-child(2) {
+        height: 40px;
+    }
+
+    .buttons {
+        margin-top: -90px;
+        justify-content: center;
+
+    }
+
 }

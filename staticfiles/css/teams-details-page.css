@@ -72,7 +72,31 @@
     background-color: #7f8c8d;
 }
 
-@media (max-width: 480px) {
-
+#playerCard {
+    margin-top: 12px;
 }
+
+@media (max-width: 480px) {
+    #teamCard {
+        border-radius: 10px;
+    }
+
+    #teamCard h1 {
+        font-size: 1.5rem;
+    }
+
+    /*each player separate card*/
+    #playerCard > div {
+        display: flex;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    /*each player description*/
+    #playerCard > div > p {
+        flex-grow: 1;
+    }
+}
+
 

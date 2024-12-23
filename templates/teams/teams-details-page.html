@@ -10,7 +10,8 @@
     {% include 'common/delete-confirmation.html' %}
 
     <div class="lg:flex md:block p-5">
-        <div class="m-5 p-3 lg:w-1/3 lg:m-3 sm:w-full sm:m-auto border-2 border-blue-300 sm:rounded-2xl lg:rounded-lg bg-slate-700">
+        {# Team details #}
+        <div id="teamCard" class="m-5 p-3 lg:w-1/3 lg:m-3 sm:w-full m-auto border-2 border-blue-300 lg:rounded-lg bg-slate-700">
             <h1 class="text-white text-center sm:text-5xl lg:text-2xl m-2">{{ team.name }}</h1>
             <h3 class="text-white text-center sm:text-2xl lg:text-lg m-2">Rank: <strong>{{ team.rank }}</strong></h3>
 
@@ -19,14 +20,17 @@
                 <p class="px-2">Draws: <span class="text-yellow-300">{{ team.draws }}</span></p> |
                 <p class="px-2">Loses: <span class="text-red-500">{{ team.loses }}</span></p>
             </div>
-            <div class="w-52 h-52 rounded-full overflow-hidden lg:m-2 justify-self-center md:mt-6">
+
+            <div class="w-52 h-52 rounded-full overflow-hidden lg:m-2 justify-self-center mt-6">
                 {% if team.logo %}
                     <img src="{{ team.logo.url }}" alt="Team Logo" class="w-full h-full object-cover">
                 {% else %}
                     <img src="{{ MEDIA_URL }}profile_images/default_team.jpg" alt="Default Team Logo" class="w-full h-full object-cover">
                 {% endif %}
             </div>
+
             <p class="text-white pb-2 sm:text-2xl lg:text-lg">Team history: {{ team.history }}</p>
+
             {% for admin in team.administrators.all %}
                 <p class="text-white pb-2 sm:text-2xl lg:text-lg">Administrators: {{ admin.username }}</p>
             {% endfor %}
@@ -53,9 +57,10 @@
 
 
         </div>
-        <div class="m-5 lg:w-2/3 lg:m-3 sm:w-full sm:m-auto sm:my-5 sm:block lg:grid grid-cols-5 gap-1">
+{#       Player details#}
+        <div id="playerCard">
             {% for player in team.players.all %}
-                <div class="text-black bg-gray-700 sm:rounded-2xl lg:rounded-lg w-50 h-60 p-3 border-2 border-blue-400 sm:flex lg:block">
+                <div class="text-black bg-gray-700 p-3 border-2 border-blue-400">
                     <div class="rounded-full overflow-hidden h-32 w-32 lg:mx-auto sm:mx-5 sm:my-auto lg:border-2 border-blue-300 p-2">
                         <img src="{{ player.image.url }}" alt="" class="object-cover h-full w-full rounded-full">
                     </div>
@@ -67,7 +72,9 @@
     
 {% endblock %}
 
+
 {% block script %}
     <script src="{% static 'js/delete-confirmation.js' %}"></script>
+    <script src="{% static 'js/nav.js' %}"></script>
 {% endblock %}
 
