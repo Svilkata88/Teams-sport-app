@@ -53,3 +53,10 @@ input[type="file"] {
     border-radius: 100%;
     margin-top: 25px;
 }
+
+@media (max-width: 480px) {
+    .update-team-container {
+        width: 90%;
+    }
+
+}

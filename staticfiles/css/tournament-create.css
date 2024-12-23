@@ -51,3 +51,15 @@
     color: #FF0000;
     text-align: center;
 }
+
+@media (max-width: 480px) {
+    .tournament-create-form {
+        width: 90%;
+        min-height: 300px;
+    }
+
+    .tournament-container-row {
+        width: 95%;
+        font-size: 0.8rem;
+    }
+}

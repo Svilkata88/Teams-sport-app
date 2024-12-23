@@ -9,8 +9,8 @@ from matches.forms import MatchCreateForm
 from matches.models import Matches
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-
 from matches.serializers import MatchSerializer
+from tournaments.models import Tournament
 
 
 class MatchesDashboard(ListView):

@@ -28,3 +28,11 @@ body > div:nth-child(2){
     box-shadow: 0 10px 29px 8px rgba(0, 0, 0, 0.40);
     opacity: 0.9;
 }
+
+@media (max-width: 480px) {
+    #form-wrapper {
+        width: 90%;
+        margin-top: 15px;
+        height: 300px;
+    }
+}

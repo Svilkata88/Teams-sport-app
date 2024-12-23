@@ -27,6 +27,25 @@
     margin-bottom: 7px;
 }
 
+#filterBtn {
+    margin-left: 235px;
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 5px 20px;
+    color: lime;
+}
+
+.filter-container p {
+    background-color: black;
+    padding: 3px 10px;
+    border-radius: 8px;
+    border: 1px solid lime;
+}
+
 @media (max-width: 480px) {
 
     .matches-container {
@@ -46,5 +65,24 @@
         margin: 15px 0 15px 0;
         padding: 20px;
         opacity: 0.9;
+    }
+
+    #filterBtn {
+        margin-left: 15px;
+    }
+
+    #filterBtn:active {
+        margin-left: 15px;
+        border: 1px solid lime;
+        border-radius: 100%;
+        padding: 1px;
+    }
+
+    .filter-container {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        padding: 5px 20px;
+        color: lime;
     }
 }

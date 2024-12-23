@@ -3,7 +3,8 @@ body > div:nth-child(2){
 }
 
 .card-container {
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
     color: white;
     width: 55%;
     height: 500px;
@@ -46,3 +47,28 @@ form {
     object-fit: cover;
 }
 
+@media (max-width: 480px) {
+    .card-container {
+        width: 90%;
+        height: 360px;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        height: 255px;
+        gap: 10px
+    }
+
+    .card-content {
+        padding-left: 10px;
+    }
+
+    .card-content p input {
+        font-size: 0.8rem;
+        width: 100%;
+        margin-bottom: 5px;
+        background-color: #ffffcc;
+    }
+}

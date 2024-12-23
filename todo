@@ -1,5 +1,7 @@
-- make the app responsive
+- DONE - make the app responsive
 - make landing page more stylish
-- make players list appearance more stylish
-- validators for creation pages of players, teams, matches
+- DONE - make players list appearance more stylish
+- DONE validators for creation pages of players ( DONE ), teams ( no Need ), matches ( DONE )
 - implementing teams rating logic
+- DONE - add button right to h1 in tournaments for filtering type tournament
+    showing ( all, ended, at play, postponed and finished )

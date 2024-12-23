@@ -68,3 +68,17 @@
     color:lemonchiffon;
     font-weight: bold;
 }
+
+@media (max-width: 480px) {
+    .match-container {
+        width: 90%;
+    }
+
+    .match-container h1 {
+        font-size: 2rem;
+    }
+
+    .teams {
+        font-size: 1.5rem;
+    }
+}

@@ -11,13 +11,6 @@
         <form method="post" action="{% url 'update-team' team.pk %}" enctype="multipart/form-data">
             {% csrf_token %}
             <h1>Update team</h1>
-{#            {% if messages %}#}
-{#                <div class="alert alert-danger">#}
-{#                    {% for message in messages %}#}
-{#                        <p>{{ message }}</p>#}
-{#                    {% endfor %}#}
-{#                </div>#}
-{#            {% endif %}#}
 
             {% for field in update_team_form %}
                 <div class="update-team-field">
@@ -54,4 +47,5 @@
 
 {% block script %}
     <script src="{% static 'js/updateTeam.js' %}"></script>
+    <script src="{% static 'js/nav.js' %}"></script>
 {% endblock %}

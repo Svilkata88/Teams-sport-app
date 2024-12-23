@@ -28,3 +28,20 @@ body > div:nth-child(2){
     box-shadow: 0 10px 29px 8px rgba(0, 0, 0, 0.40);
     opacity: 0.9;
 }
+
+.error {
+    color: red;
+    font-weight: 500;
+    margin-top: 5px;
+    background-color: #f5dd5d;
+    padding: 2px 5px;
+    border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+    #form-wrapper {
+        height: 550px;
+        width: 90%;
+        margin-top: -50px;
+    }
+}

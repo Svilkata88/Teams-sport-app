@@ -64,8 +64,8 @@ class RegisterPlayerForm(forms.ModelForm):
         validator = PhoneNumberValidator()
         try:
             validator(tel)
-        except ValidationError:
-            raise ValidationError("Enter a valid 10-digit phone number.")
+        except ValidationError as e:
+            raise ValidationError(e.messages)
 
         return tel
 
@@ -74,7 +74,7 @@ class RegisterPlayerForm(forms.ModelForm):
         password = cleaned_data.get("password")
         confirm_password = cleaned_data.get("confirm_password")
         if password and confirm_password and password != confirm_password:
-            raise forms.ValidationError("Passwords do not match.")
+            raise forms.ValidationError("Passwords do not match!!!")
 
         return cleaned_data
 

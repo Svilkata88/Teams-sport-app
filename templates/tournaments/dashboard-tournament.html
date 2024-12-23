@@ -10,22 +10,50 @@
 
 {% block content %}
 
-    {% if can_create %}
-        <div class="grid grid-cols-5 gap-1 ">
-        <a href="{% url 'tournament-create' %}" class="p-3">
-            <button type="button" id="redirectTeamBtn" class="transition-transform duration-200 hover:scale-110">
+    <div class="grid grid-cols-5 gap-1 ">
+        {% if can_create %}
+            <a href="{% url 'tournament-create' %}" class="p-3">
+                <button type="button" id="redirectTeamBtn" class="transition-transform duration-200 hover:scale-110">
                     <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="40px" width="40px" version="1.1" id="Capa_1" viewBox="0 0 32 32" xml:space="preserve">
-                        <g>
-                            <g id="plus_x5F_alt">
-                                <path style="fill:lime;" d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M24,18h-6v6h-4v-6H8v-4    h6V8h4v6h6V18z"/>
+                            <g>
+                                <g id="plus_x5F_alt">
+                                    <path style="fill:lime;" d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M24,18h-6v6h-4v-6H8v-4    h6V8h4v6h6V18z"/>
+                                </g>
                             </g>
-                        </g>
+                        </svg>
+                </button>
+            </a>
+        {% else %}
+            <a href="#" class="p-3">
+                <button type="button" id="redirectTeamBtn">
+                    <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="40px" width="40px" version="1.1" id="Capa_1" viewBox="0 0 32 32" xml:space="preserve">
+                            <g>
+                                <g id="plus_x5F_alt">
+                                    <path style="fill:gainsboro;" d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M24,18h-6v6h-4v-6H8v-4    h6V8h4v6h6V18z"/>
+                                </g>
+                            </g>
+                        </svg>
+                </button>
+            </a>
+        {% endif %}
+
+        <h1 class="text-white text-center text-2xl m-5 col-span-3" id="h1">Tournaments</h1>
+
+        <a href="#" class="p-3">
+            <button type="button" id="filterBtn" class="transition-transform duration-200 hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="40px" width="40px">
+                        <path style="fill:lime;" d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8L32 224c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8l256 0c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z"/>
                     </svg>
             </button>
         </a>
-        <h1 class="text-white text-center text-2xl m-5 col-span-3" id="h1">Tournaments</h1>
     </div>
-    {% endif %}
+
+    <div class="filter-container col-span-3" id="filter-c">
+        <a href="{% url 'f-matches-dashboard' 'all' %}"><p>All</p></a>
+        <a href="{% url 'f-matches-dashboard' 'finished' %}"><p>Ended</p></a>
+        <a href="{% url 'f-matches-dashboard' 'playing' %}"><p>At play</p></a>
+        <a href="{% url 'f-matches-dashboard' 'coming' %}"><p>Coming soon</p></a>
+    </div>
 
     <div class="matches-container col-span-3">
         <div class="matches-at-play">
@@ -48,5 +76,9 @@
         </div>
     </div>
 
+{% endblock %}
 
+{% block script %}
+    <script src="{% static 'js/tournaments-dashboard.js' %}"></script>
+    <script src="{% static 'js/nav.js' %}"></script>
 {% endblock %}

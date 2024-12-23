@@ -1,4 +1,5 @@
 from django.db import models
+from matches.validators import TimeValidator, DateValidator
 from players.models import Player
 from teams.models import Team
 
@@ -36,8 +37,8 @@ class Matches(models.Model):
     status = models.CharField(choices=StatusChoices.choices, default=StatusChoices.SCHEDULED)
     playground = models.ForeignKey(to='matches.Playground', on_delete=models.CASCADE, related_name='pitch_matches')
     date_added = models.DateField(auto_now_add=True, editable=False)
-    date = models.DateField()
-    time = models.TimeField()
+    date = models.DateField(validators=[DateValidator()])
+    time = models.TimeField(validators=[TimeValidator()])
     creator = models.ForeignKey(to=Player, null=True, on_delete=models.SET_NULL, related_name='created_matches')
 
     def __str__(self):
@@ -45,6 +46,8 @@ class Matches(models.Model):
     
     class Meta:
         ordering = ['-pk']
+
+
 
 
 
