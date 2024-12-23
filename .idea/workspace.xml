@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/details-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/details-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/matches-create.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/matches-create.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/teams-details-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/teams-details-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matches/matches-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matches/matches-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matches/matches-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matches/matches-dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/players/details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/players/details-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/teams/teams-details-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teams/teams-details-page.html" afterDir="false" />
-    </list>
+    <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -169,7 +159,7 @@
       <workItem from="1733949906760" duration="6117000" />
       <workItem from="1734175751015" duration="60232000" />
       <workItem from="1734542295269" duration="29167000" />
-      <workItem from="1734766457490" duration="58086000" />
+      <workItem from="1734766457490" duration="58441000" />
     </task>
     <servers />
   </component>
