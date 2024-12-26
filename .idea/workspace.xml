@@ -35,6 +35,8 @@
       <change beforePath="$PROJECT_DIR$/tournaments/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tournaments/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tournaments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tournaments/views.py" afterDir="false" />
     </list>
+    <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="" />
+    &gt;&gt;&gt;&gt;&gt;&gt;&gt; b973d862c20dc68fdeea264ef947127d81618a96
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,6 +193,8 @@
       <workItem from="1734542295269" duration="29167000" />
       <workItem from="1734766457490" duration="76407000" />
       <workItem from="1734977867922" duration="7947000" />
+      <workItem from="1734766457490" duration="58441000" />
+      b973d862c20dc68fdeea264ef947127d81618a96
     </task>
     <servers />
   </component>
