@@ -28,7 +28,7 @@ Teams-Sport-app is a place for connecting players ( in this stage sport is only 
     
 <h3>3. Set up database and cloudinary ( optional )</h3>
 
-<a href="https://github.com/Svilkata88/Teams-sport-app/blob/main/docs/settings_info.md">settings setup<a/>
+<a href="https://github.com/Svilkata88/Teams-sport-app/blob/main/docs/settings_info.md">>>> settings setup< <<<<a/>
 
 <h3>4. Run migrations</h3>
 
