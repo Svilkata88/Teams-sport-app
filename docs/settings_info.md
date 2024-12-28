@@ -1,5 +1,6 @@
 <h2>For such configuration you need .env file</h2>
 
+'''
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
@@ -125,4 +126,4 @@ LOGIN_URL = '/players/login/'
 LOGIN_REDIRECT_URL = 'players/teams/'
 
 AUTH_USER_MODEL = 'players.Player'
-
+'''
