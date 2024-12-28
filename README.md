@@ -1,6 +1,7 @@
 <h2>﻿What it is about?<h2/>
  
-Teams-Sport-app is a place for connecting players ( in this stage sport is only football ), allowing them to create teams, arrange matches and track the results.
+<p>Teams-Sport-app is a place for connecting players ( in this stage sport is only football ), allowing them to create teams, arrange matches and track the results.<p/>
+
 <h2>Quick walk into the app:</h2>
 <ul> On the app you can:
   <li>create your own team: set logo, history, additional administrators ( by default creator is the only administrator ) or just join another team</li>
