@@ -1,4 +1,4 @@
-﻿What it is about?
+<h2>﻿What it is about?<h2/>
  
 Teams-Sport-app is a place for connecting players ( in this stage sport is only football ), allowing them to create teams, arrange matches and track the results.
 <h2>Quick walk into the app:</h2>
