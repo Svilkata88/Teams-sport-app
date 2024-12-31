@@ -8,7 +8,7 @@ register = template.Library()
 def status(match: Matches):
     """Makes status indicator different color depending of status value."""
     if match.status == "scheduled":
-        return "darkgoldenrod"
+        return "#6b21a8"
     elif match.status == "playing":
         return "green"
     elif match.status == "finished":

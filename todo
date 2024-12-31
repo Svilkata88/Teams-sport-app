@@ -1,7 +1,17 @@
 - DONE - make the app responsive
-- make landing page more stylish
+- make landing page more stylish .... WORKING ON ....
 - DONE - make players list appearance more stylish
 - DONE validators for creation pages of players ( DONE ), teams ( no Need ), matches ( DONE )
 - implementing teams rating logic
 - DONE - add button right to h1 in tournaments for filtering type tournament
-    showing ( all, ended, at play, postponed and finished )
+                showing ( all, ended, at play, postponed and finished )
+- to write well structured, readable, good locking documentation for the project
+- logic for sending requests for joining team and for inviting in a team, also when new match is created
+    every payer involved to be notified! ( django signals )
+- chat
+- Done - update password logic
+- reset password logic - ......NOT FINISHED....... NEED REDIS AND CELERY FOR EMAIL SENDING AND LOGIC FOR SMS SENDING
+- add online indicator for players online ( need  WebSockets for realtime updates )
+- add logic for rating players, reset the ratings in the beginning of every year
+- if match status once change to finished ( add js for: Are you sure you want to finish the match? question ) not to be possible
+                to be changed again from user ( only from admin ). ТO ADD ADDITIONAL FIELDS WITH DISABLED ATTR

@@ -1,4 +1,5 @@
 from django.db import models
+from common.utils import postmatch_stats_update
 from matches.validators import TimeValidator, DateValidator
 from players.models import Player
 from teams.models import Team
@@ -46,6 +47,13 @@ class Matches(models.Model):
     
     class Meta:
         ordering = ['-pk']
+
+    def save(self, *args, **kwargs):
+        if self.status == self.StatusChoices.FINISHED:
+            print('finihsed')
+            postmatch_stats_update(self)
+
+        super().save(*args, **kwargs)
 
 
 

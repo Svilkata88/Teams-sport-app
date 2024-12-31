@@ -1,4 +1,4 @@
-body > div:nth-child(2){
+body #base {
     background-image: url('../images/player.png')!important;
 }
 
@@ -17,12 +17,22 @@ body > div:nth-child(2){
 
 form {
     display: flex;
+    justify-content: center;
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
+    width: 60%;
     padding-left: 20px;
+}
+
+.card-content p input {
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #ffffcc;
 }
 
 .image-container {
@@ -47,6 +57,22 @@ form {
     object-fit: cover;
 }
 
+#pop-up > div {
+    color: red;
+    background-color: #f5dd5d!important;
+    padding: 0;
+}
+
+#pop-up {
+    border: none;
+    background-color: #f5dd5d!important;
+}
+
+.card-content a {
+        color: #f5dd5d;
+        text-decoration: underline ;
+    }
+
 @media (max-width: 480px) {
     .card-container {
         width: 90%;
@@ -68,7 +94,9 @@ form {
     .card-content p input {
         font-size: 0.8rem;
         width: 100%;
+        padding: 2px 8px;
         margin-bottom: 5px;
         background-color: #ffffcc;
     }
+
 }

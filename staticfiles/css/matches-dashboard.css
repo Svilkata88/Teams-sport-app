@@ -75,6 +75,8 @@
     gap: 10px;
     justify-items: end;
     margin-top: auto;
+    background-color: #4f5b69;
+    border-radius: 8px;
 }
 
 .legendChildrenDivs {

@@ -87,9 +87,7 @@ class DeleteMatch(DeleteView):
 
 class UpdateMatch(UpdateView):
     model = Matches
-    fields = ['home_team', 'away_team', 'referee', 'status', 'playground', 'date', 'time', 'home_team_score',
-              'away_team_score']
-    form = MatchCreateForm
+    form_class = MatchCreateForm
     template_name = 'matches/matches-update.html'
     success_url = reverse_lazy('matches-dashboard')
 

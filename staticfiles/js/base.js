@@ -1,8 +1,11 @@
-const message = document.getElementById("pop-up");
+const messages = document.querySelectorAll(".message");
 
-    if (message) {
-        // Set a timeout to hide the message after 5 seconds
+console.log(messages)
+
+if (messages.length > 0) {
+    messages.forEach((message) => {
         setTimeout(function () {
             message.style.display = "none";
-        }, 4000);
-    }
+        }, 3500);
+    });
+}

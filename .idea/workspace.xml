@@ -6,37 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matches/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/matches/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matches/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/matches/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matches/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/matches/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/players/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/players/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/players/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/validators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/create-team.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/create-team.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/login-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/login-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/match-detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/match-detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/matches-create.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/matches-create.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/players-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/players-dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/register_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/register_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/teams-update-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/teams-update-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/tournament-create.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/tournament-create.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/tournaments-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/tournaments-dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/update-player.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/update-player.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/common/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/common/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matches/match-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matches/match-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matches/matches-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matches/matches-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/matches/matches-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matches/matches-update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/players/register-player.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/players/register-player.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/players/update-player.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/players/update-player.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/teams/create_team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teams/create_team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/teams/update-team.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teams/update-team.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tournaments/dashboard-tournament.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tournaments/dashboard-tournament.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matches/templatetags/custom_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/matches/templatetags/custom_filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/matches-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/matches-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/matches/matches-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/matches/matches-dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo" beforeDir="false" afterPath="$PROJECT_DIR$/todo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tournaments/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tournaments/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tournaments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tournaments/views.py" afterDir="false" />
     </list>
-    <list default="true" id="2e5b9fa8-3509-4088-9a8a-fece40fdcca1" name="Changes" comment="" />
-    &gt;&gt;&gt;&gt;&gt;&gt;&gt; b973d862c20dc68fdeea264ef947127d81618a96
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +168,6 @@
       <workItem from="1734766457490" duration="76407000" />
       <workItem from="1734977867922" duration="7947000" />
       <workItem from="1734766457490" duration="58441000" />
-      b973d862c20dc68fdeea264ef947127d81618a96
     </task>
     <servers />
   </component>

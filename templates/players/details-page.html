@@ -14,7 +14,7 @@
         <h1 class="text-2xl justify-self-center">{{ player.username }}'s details</h1>
 
         <div class="card-content">
-            {# IMAGE DETAILS#}
+            {# IMAGE DETAILS #}
             <div class="card-image-container">
                 {# IMAGE PLACEHOLDER #}
                 <div class="card-image">
@@ -56,6 +56,7 @@
             </div>
         </div>
 
+        {# UPDATE/DELETE BUTTONS #}
         {% if request.user.is_authenticated and request.user.pk == player.pk %}
             <div class="buttons">
                 {# UPDATE BUTTON #}

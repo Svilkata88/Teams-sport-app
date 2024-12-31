@@ -11,6 +11,6 @@ class TeamAdmin(admin.ModelAdmin):
     readonly_fields = ['date_added', 'date_founded']
 
     def get_players(self, obj):
-        return ', '.join(player.name for player in obj.players.all())
+        return ', '.join(player.username for player in obj.players.all())
 
     get_players.short_description = 'players'

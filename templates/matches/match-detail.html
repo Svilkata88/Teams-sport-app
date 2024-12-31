@@ -1,5 +1,6 @@
 {% extends 'common/base.html' %}
 {% load static %}
+{% load custom_filters %}
 
 {% block title %}Create match{% endblock %}
 {% block head %}
@@ -19,7 +20,7 @@
             |
             <div class="time">Time: {{match.time}}</div>
             |
-            <div class="time">Status: {{match.status}}</div>
+            <div style="color: {{ match|status }}; background: #bbf7d0; border-radius: 8px; padding: 1px 3px">Status: {{match.status}}</div>
         </div>
         <div class="teams">
             <div class="home_team">{{match.home_team}}</div>

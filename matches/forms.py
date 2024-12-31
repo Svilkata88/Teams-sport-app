@@ -4,6 +4,13 @@ from matches.models import Matches
 
 
 class MatchCreateForm(forms.ModelForm):
+    # checking if the status field is set to finished and if yes it is disabled
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if self.instance and self.instance.status == Matches.StatusChoices.FINISHED:
+            for field in self.fields:
+                self.fields[field].widget.attrs['disabled'] = 'disabled'
+
     class Meta:
         model = Matches
         fields = ['home_team', 'away_team', 'referee', 'status', 'playground', 'date', 'time', 'home_team_score',
@@ -31,8 +38,6 @@ class MatchCreateForm(forms.ModelForm):
                 'placeholder': 'Enter away team score',
             }),
         }
-
-
 
 
 
